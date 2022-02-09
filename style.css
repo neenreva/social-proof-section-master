@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   font-family: "Spartan", sans-serif;
+  font-size: 0.751rem;
 }
 
 html {
@@ -23,11 +24,15 @@ body {
 }
 
 header {
-    border: 1px dashed aquamarine;
-    color: hsl(300, 43%, 22%);
+  display: flex;
+  flex-direction: column;
+  border: 1px dashed aquamarine;
+  color: hsl(300, 43%, 22%);
 }
 
 main {
+  display: flex;
+  flex-direction: column;
   border: 1px dashed aquamarine;
   color: hsl(300, 43%, 22%);
 }
@@ -37,27 +42,27 @@ footer {
 }
 
 .user-review {
-    background-color: hsl(300, 43%, 22%);
-    padding: 1rem;
-    border-radius: 1rem;
-    margin: 1rem 0;
-    color:hsl(300, 24%, 96%)
+  background-color: hsl(300, 43%, 22%);
+  padding: 1rem;
+  border-radius: 1rem;
+  margin: 1rem 0;
+  color: hsl(300, 24%, 96%);
 }
 
 p {
-    font-size: .751rem;
+  font-size: 0.751rem;
 }
 
 h1 {
-    padding: 2rem;
-    text-align: center;
+  padding: 2rem;
+  text-align: center;
   font-size: 1.5rem;
 }
 h2 {
-  font-size: .751rem;
+  font-size: 0.751rem;
 }
 h3 {
-  font-size: .751rem;
+  font-size: 0.751rem;
   color: hsl(333, 80%, 67%);
 }
 
@@ -68,4 +73,62 @@ li {
   list-style: none;
   border-radius: 1rem;
   margin: 1rem 0;
+}
+
+span {
+  font-size: 5rem;
+  line-height: 2rem;
+  letter-spacing: -10px;
+  color: hsl(40, 100%, 50%);
+}
+
+@media (min-width: 600px) {
+  html {
+    height: 100%;
+  }
+
+  header,
+  main {
+    margin: 3rem 0rem;
+  }
+  body {
+    display: flex;
+    width: 80vw;
+    margin: 0rem 10rem;
+  }
+  header {
+    width: 100%;
+    flex-direction: row;
+    border: 2px dotted black;
+    justify-content: space-between;
+  }
+
+  .customers,
+  .ratings {
+    flex: 1;
+  }
+
+  .customers {
+    padding: 0 4rem 0 0;
+  }
+
+  .ratings {
+    padding: 0 0 0 4rem;
+  }
+
+  li {
+    display: flex;
+    width: 80%;
+    align-items: center;
+  }
+
+  main {
+    flex-direction: row;
+    gap: 1rem;
+  }
+
+  footer {
+    position: fixed;
+    bottom: 0;
+  }
 }
