@@ -53,6 +53,7 @@ footer {
   margin: 1rem 0;
   color: hsl(300, 24%, 96%);
   line-height: 1.75;
+  font-size: 1rem;
 }
 
 .user-avatar {
@@ -79,9 +80,11 @@ h1 {
   font-size: 2.8rem;
   line-height: 1;
 }
+
 h2 {
-  font-size: 0.851rem;
+  font-size: .81rem;
 }
+
 h3 {
   font-size: 0.751rem;
   font-weight: 400;
@@ -91,10 +94,11 @@ h3 {
 li {
   background-color: hsl(300, 24%, 96%);
   padding: 1rem;
-  text-align: center;
-  list-style: none;
   border-radius: 0.51rem;
   margin: 1rem 0;
+  padding-top: 1.5rem;
+  text-align: center;
+  list-style: none;
 }
 
 span {
@@ -119,9 +123,8 @@ a:hover {
   }
 
   body {
-    display: flex;
-    width: 80vw;
-    margin: 0rem 10rem;
+    width: 75vw;
+    margin: 0rem auto;
     background-image: url(images/bg-pattern-top-desktop.svg),
       url(images/bg-pattern-bottom-desktop.svg);
     background-position: top left, bottom right;
@@ -146,10 +149,14 @@ a:hover {
     text-justify: distribute;
   }
 
+  p {
+    font-size: 1.5rem;
+    }
+
   main {
     height: 30%;
     flex-direction: row;
-    gap: 2rem;
+    gap: 2.5rem;
   }
 
   .user-review {
@@ -172,18 +179,22 @@ a:hover {
   }
 
   .customers {
-    padding: 0 4rem 0 0;
+    padding: 0 3vw 0 0;
   }
 
   .ratings {
-    padding: 0 0 0 4rem;
+    padding: 0 0 0 3vw;
   }
 
   h1 {
     padding: 1rem 3rem 2rem 0;
     text-align: left;
-    font-size: 2.8rem;
+    font-size: calc(1vw + 2rem);
     line-height: 1;
+  }
+
+  h2 {
+    font-size: 1rem;
   }
 
   li {
